@@ -43,7 +43,7 @@ class ArCoreView(
         id: Int,
         private val isAugmentedFaces: Boolean,
         private val debug: Boolean
-)  PlatformView, MethodChannel.MethodCallHandler {
+) : PlatformView, MethodChannel.MethodCallHandler {
     private val methodChannel: MethodChannel = MethodChannel(messenger, "arcore_flutter_plugin_$id")
     //       private val activity: Activity = (context.applicationContext as
     // FlutterApplication).currentActivity
